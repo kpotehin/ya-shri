@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
@@ -12,11 +11,37 @@
 		<div class="main-layer">
 			<div class="top-menu">
 				<a class="tm-item" href="#about">обо мне</a>
+				<div style="float:right"><a class="tm-item" href="#expand">раскрыть все</a><div style="float:left; margin:13px 10px 0">/</div><a class="tm-item" href="#collapse">свернуть все</a></div>
+			</div>
+			<div class="left-menu">
+				<a class="lm-item selected" alt="task1" href="#task1">задание №1</a>
+				<a class="lm-item" alt="task2" href="#task2">задание №2</a>
+				<a class="lm-item" alt="task3" href="#task3">задание №3</a>
+				<a class="lm-item" alt="task4" href="#task4">задание №4</a>
+				<a class="lm-item" alt="task5" href="#task5">задание №5</a>
+			</div>
+			<div class="content">
+				
 			</div>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$('.tm-item').mouseover(function() {
+					$(this).addClass('tm-active');
+				}).mouseout(function() {
+					$(this).removeClass('tm-active');
+				});
 
+				$('.lm-item:not(.selected)').mouseover(function() {
+					$(this).addClass('lm-active');
+				}).mouseout(function() {
+					$(this).removeClass('lm-active');
+				});
+
+				$('.lm-item').click(function() {
+					$('.lm-item').removeClass('selected');
+					$(this).addClass('selected');
+				});
 			});
 		</script>
 	</body>
