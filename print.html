@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Печать - Ответы на задания ШРИ | Потехин Кирилл</title>
+			<link href="/css/style.css" type="text/css" rel="stylesheet" />
+		</head>
+	<body style="text-align:justify">
+		<div class="main-layer">
+			<br />
+			<a href="/index.html">главная</a>
+			<div>
+				<h3>Обо мне.</h3>
+				Добрый день! Меня зовут Кирилл, мне 18 лет. Я родился и живу в Москве. Учусь в Государственном Университете Управления, факультет "Управление и предпринимательство в социальной сфере" на 2 курсе.<br />Программированием увлёкся в 12 лет, с 14 занимаюсь им достаточно плотно. Знаю PHP, JavaScript, HTML, CSS. Из фреймворков и CMS — jQuery, Prototype.js (давно им пользовался, но вспомню при необходимости), Битрикс и WordPress, ну и MySQLi, наверное, тоже стоит упомянуть. Также есть опыт разработки расширения под Chrome, и много интеграций с различными сервисами и системами, начиная от Facebook, Vkontakte и биллинговыми, заканчивая внутренними учётными системами, почтовыми сервисами (по SOAP). Достаточно хорошо знаю английский (свободно читаю документации и статьи, пишу тоже неплохо, вот только бегло говорить не могу за недостатком практики).<br />С августа 2009 по декабрь 2011 работал в компании <a href="http://qsoft.ru/">QSOFT</a>. Первые полтора года работал программистом, за это время принимал существенное участие в проектах <a href="http://www.sapato.ru/">SAPATO.RU</a> (разработка каталога, корзины и интеграция с внешними системами), <a href="http://zurich.ru/calculator/auto/">калькуляторы</a> для расчёта стоимости КАСКО и ОСАГО для СК "Цюрих", <a href="http://www.amocrm.ru/">amoCRM</a> (разработка функционала самой CRM, а именно карточки сделок и контактов) и несколько других проектов, но там моё участие не было столь значимым. Последний год работал менеджером по продажам, встречался с потенциальными клиентами, уточнял все детали проекта, оценивал их, составлял сметы, архитектуру и предварительное ТЗ, которые потом передавал в разработку. Заключил контракты с рядом крупных компаний. На работе мною были очень довольны, и мне также всё очень нравилось.<br />Но в какой-то момент понял, что хочу заниматься своим делом. Поэтому ушёл из компании, почти сразу же начал с нуля разрабатывать интернет-магазин текстиля <a href="http://www.tessilehome.ru/">TESSILEHOME.RU</a>. А в феврале я присоединился к проекту <a href="http://www.easy10.com/?yandex">easy ten</a>, в котором на данный момент и работаю, являясь одним из 3 со-основателей. В рамках этого проекта, я разработал сайт, серверную сторону приложения для синхронизации всех данных пользователя между разными устройствами, пропарсил несколько словарей, написал сложный интерфейс для лингвистов, которые составляют словари. Сейчас учу JAVA и параллельно веду ещё с одним программистом разработку под Android. Но тут я ещё в самом начале, предстоит многому научиться, чему, впрочем, очень рад.<br /><br />Почему решил (и очень хочу) пройти школу разработки интерфейсов в Яндексе? На это есть несколько причин. Во-первых, развиваться лучше всего среди тех, кто на голову тебя выше, а в ваших сотрудниках я ничуть не сомневаюсь. Во-вторых, мне очень интересно посмотреть и узнать, как работают флагманские компании в сфере IT — и тут вряд ли найдётся более привлекательный вариант. Ну вот, пожалуй, и всё. Сам я ответственный и трудолюбивый, так что, думаю вы тоже не потеряете от этого сотрудничества, стараться обещаю, и времени готов посвятить много:)<br />
+				Буду рад, если вы свяжетесь со мной по этому адресу: <a href="mailto:potehik@gmail.com">potehik@gmail.com</a> или по телефону +7 (916) 036-88-55. Благодарю за внимание!
+			</div>
+			<div>
+				<h3>Задание №1: Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах.</h3>
+				Инструменты:
+				<ul>
+					<li>Firebug для Firefox</li>
+					<li>Инструменты разработчика Google Chrome, IE, Safari</li>
+					<li>Dragonfly для Opera</li>
+					<li>PageSpeed для Chrome и Firefox</li>
+					<li><a href="http://jslint.com/">jslint.com</a></li>
+				</ul>
+				Приёмы:
+				<ul>
+					<li>Если необходимо найти и устранить ошибку, то обычно я ставлю брейкпоинты и пошагово отслеживаю выполнение скрипта с просмотром текущих значений переменных на каждом шаге, а также вывожу их в консоль (console.log, console.error и пр.). Таким образом ошибку найти довольно легко. Часто этого делать даже и не приходится, потому что ошибка сама отображается в консоли.</li>
+					<li>Если стоит задача оптимизировать код, то сначала я получаю среднее время работы javascript (среднее арифметическое от нескольких результатов, полученных с вкладки Timeline при обновлении страницы). Затем открываю профайлер, смотрю, какие процессы занимают больше всего времени и стараюсь оптимизировать их логику.</li>
+				</ul>
+				Также существуют полезные инструменты, позволяющие увидеть, как сайт отображается на разных версиях разных браузеров на разных ОС, такие как: IETester, <a href="http://spoon.net/browsers">spoon.net</a>, <a href="https://browserlab.adobe.com/en-us/index.html">browserlab.adobe.com</a>, <a href="https://saucelabs.com/">saucelabs.com</a> и т.д.
+			</div>
+			<div>
+				<h3>Задание №2: Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение).</h3>
+				Инструменты:
+				<ol>
+					<li>Пользователь набирает домен в адресной строке или переходит* по ссылке (yandex.ru). В этот момент браузер разбивает введённый домен на имя хоста и путь к файлу.</li>
+					<li>Если какая-то информация имеется в кэше, она берётся оттуда и сразу переходим к пункту 14, иначе идём по порядку.</li>
+					<li>Запрос отправляется на DNS-сервера провайдера (если пользователь не прописал соответствия в файле hosts).</li>
+					<li>Если в кэше DNS-серверов провайдера существуют IP-адрес, привязанный к искомому домену, то сразу переходим к пункту 14, иначе идём по порядку.</li>
+					<li>DNS-сервер провайдера делает запрос к корневому DNS-серверу.</li>
+					<li>Корневой DNS-сервер находит адреса DNS-серверов хостера, к которому привязаны NS-серверы искомого домена и возвращает их DNS-серверу провайдера.</li>
+					<li>DNS-сервер провайдера делает запрос к одному из NS-серверов.</li>
+					<li>NS-сервер возвращает IP-адрес искомого домена.</li>
+					<li>DNS-сервер провайдера кэширует этот адрес и отдаёт его браузеру.</li>
+					<li>Браузер открывает TCP/IP-соединение к серверу, на котором лежит ресурс, и отправляет HTTP-запрос.</li>
+					<li>Браузер получает ответ от сервера, и может закрыть TCP/IP-соединение или сделать другой запрос.</li>
+					<li>Браузер смотрит HTTP-заголовки, предварительно получив их из ответа, и если код состояния HTTP не соответствует шаблону 2xx, то выполняет различные действия в зависимости от кода состояния. В противном случае идёт дальше.</li>
+					<li>Если HTTP-заголовки не запрещают кэширование данных, то они кэшируются браузером.</li>
+					<li>Браузер декодирует ответ сервера.</li>
+					<li>Браузер разбирает получившийся результат, преобразуя его в пригодную для чтения и выполнения структуру, формируется дерево DOM.</li>
+					<li>Браузер выстраивает элементы для отображения в том порядке, как они будут выводиться на экран.</li>
+					<li>Браузер отображает (рисует) получившийся результат.</li>
+				</ol>
+				* Если пользователь кликает по ссылке, то срабатывают различные javascript события (onMouseDown, onMouseUp, onClick, onDblClick - опционально, onBeforeUnload – в некоторых браузерах, onUnload), обработчики которых могут оборвать переход по ссылке.
+			</div>
+			<div>
+				<h3>Задание №3: Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.</h3>
+<pre>
+function Car(manufacturer, model, year) {
+    this.manufacturer = manufacturer;
+    this.model = model;
+    this.year = typeof year != 'undefined' ? year : new Date().getFullYear();
+
+    this.getInfo = function() {
+        return this.manufacturer + ' ' + this.model + ' ' + this.year;
+    }
+
+    this.getDetailedInfo = function() {
+        return 'Производитель: ' + this.manufacturer + '. Модель: ' + this.model + '. Год: ' + this.year;
+    }
+
+    this.setPrice = function(price) {
+    	this.price = price;
+    }
+}
+
+Car.prototype.toString = function () {
+	return this.getInfo();
+};
+
+var bmw = new Car('BMW', 'X5', 2010),
+    audi = new Car('Audi', 'Q5', 2012),
+    toyota = new Car('Toyota', 'Camry');
+
+function CarDealer(name) {
+    this.name = name;
+    this.cars = [];
+
+    this.add = function() {
+    	for (var i=0; i < arguments.length; i++)
+    		this.cars.push(arguments[i]);
+
+		return this;
+    }
+
+    this.setPrice = function(carInfo, price) {
+    	if (/^(€|¥)[0-9]/.test(price)) {
+			this.cars.forEach(function (car) {
+				if (car.getInfo() == carInfo)
+					car.setPrice(price);
+			});
+		}
+
+		return this;
+    }
+
+    this.list = function() {
+    	var cars = [];
+
+		this.cars.forEach(function (car) {
+			cars.push(car.getInfo());
+		});
+
+		return cars.join(', ');
+    }
+
+    this.listByCountry = function(country) {
+    	var cars = [];
+
+		this.cars.forEach(function (car) {
+			if (country == getCountry.call(car))
+				cars.push(car.getInfo());
+		});
+
+		return cars.join(', ');
+    }
+
+    this.listWithPrice = function() {
+    	var cars = [], price, currency, course;
+
+		this.cars.forEach(function (car) {
+			currency = car.price.replace(/[0-9]/g, '');
+			price = car.price.replace(/[^0-9]/g, '');
+
+			if (currency == '€')
+				course = 40.7249;
+			else
+				course = 0.415156;
+
+			price = price * course;
+
+			cars.push(car.getInfo() + ' ' + Math.round(price) + ' руб.');
+		});
+
+		return cars.join(', ');
+    }
+}
+
+var yandex = new CarDealer('Яндекс.Авто');
+
+yandex.add(toyota).
+    add(bmw, audi);
+
+yandex
+    .setPrice('BMW X5 2010', '€2000')
+    .setPrice('Audi Q5 2012', '€3000')
+    .setPrice('Toyota Camry 2012', '¥3000');
+
+function getCountry() {
+    switch (this.manufacturer.toLowerCase()) {
+        case 'bmw':
+    case 'audi':
+            return 'Germany';
+
+        case 'toyota':
+            return 'Japan';
+    }
+}
+
+yandex.list(); //BMW X5 2010, Audi Q5 2012, Toyota Camry 2012
+yandex.listByCountry('Germany'); //BMW X5 2010, Audi Q5 2012
+yandex.listWithPrice(); //Toyota Camry 2012 1245 руб., BMW X5 2010 81450 руб., Audi Q5 2012 122175 руб.
+</pre>
+			</div>
+			<div>
+				<h3>Задание №4: Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа фронтенд-разработки». (предполагается работа с командной строкой)</h3>
+				<pre>find /path/to/directory -type f -name "*yandex*.txt" 2>&- -exec grep -l "школа фронтенд-разработки" {} +</pre>
+				<br />
+				find /path/to/directory — указывает, что ищем в такой-то директории. Чтобы искать в текущей директории, в качестве /path/to/directory указывается .<br />
+				-type f — указывает, что ищем только файлы<br />
+				-name "*yandex*.txt" — шаблон имени файла<br />
+				2>&- — отключает вывод ошибок в консоль<br />
+				-exec {} + — с найденными файлами выполняем заданное действие<br />
+				-exec — с найденными файлами выполняем заданное действие<br />
+				-grep -l "школа фронтенд-разработки" — в найденных файлах ищем заданную строку; -l указывает, что нам нужно вернуть название файла, в котором была найдена строка, а не саму строку
+			</div>
+			<div>
+				<h3>Задание №5: Дана программа, реализованная одновременно на Bash, Python и Perl. Программа принимает произвольное количество аргументов и печатает их количество. Нужно добавить опцию -v для verbose-режима, в котором дополнительно выводится значение каждого из аргументов.</h3>
+Bash
+<pre>
+#!/usr/bin/env bash
+
+usage() {
+cat << EOF
+Usage: printargs.sh [OPTIONS] [ARGUMENTS]
+ Print the number of arguments.
+
+OPTIONS:
+ -h print help message
+ -m MSG custom message
+ -v print each argument
+
+Examples:
+ printargs.sh a b c
+ printargs.sh -v a b c
+ printargs.sh -m 'Arguments count: ' a b c
+ printargs.sh -h
+
+EOF
+}
+
+while getopts “hvm:” OPTION
+do
+ case $OPTION in
+        h)
+            usage
+            exit 1
+            shift;;
+        m)
+            MESSAGE=$OPTARG
+            shift;shift;;
+        v)
+            VERBOSE=true
+            shift;;
+    esac
+done
+
+COUNT=0
+
+for ARG in $@; do
+    if [[ $VERBOSE ]]; then
+    echo $ARG
+    fi
+    let COUNT+=1
+done
+
+if [[ $MESSAGE != "" ]]; then
+echo $MESSAGE
+fi
+
+echo $COUNT
+</pre>
+<br />
+Python
+<pre>
+#!/usr/bin/env python
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Print the number of arguments.')
+parser.add_argument('arguments', metavar='ARG', type=str, nargs='*', help='some arguments')
+parser.add_argument('-m', dest='message', default='', help='custom message')
+parser.add_argument('-v', dest='verbose', default='', help='verbose mode')
+
+args = parser.parse_args()
+
+count = 0
+
+for a in args.arguments:
+    if args.verbose != '':
+    	print(a)
+    count += 1
+
+if args.message != '':
+    print(args.message)
+
+print(count)
+</pre>
+<br />
+Perl
+<pre>
+#!/usr/bin/env perl
+
+use strict;
+use Getopt::Long;
+use Pod::Usage;
+
+my $help;
+my $message = '';
+my $verbose;
+
+@ARGV and GetOptions(
+    "h" => \$help,
+    "m:s" => \$message,
+    "v" => \$verbose,
+) or pod2usage(1);
+pod2usage(-verbose => 2, -exitval => 2) if $help;
+
+my $count = 0;
+my $arg;
+
+foreach $arg(@ARGV) {
+    if ($verbose) {
+        print $arg . "\n";
+    }
+    $count++;
+}
+
+if ($message ne "") {
+    print($message . "\n");
+}
+
+print($count . "\n");
+
+__END__
+
+=head1 NAME
+
+ printargs.pl - Print the number of arguments.
+
+=head1 SYNOPSIS
+
+ printargs.pl [options] [arguments]
+
+=head1 OPTIONS
+
+ -h Show help message.
+
+ -m MSG Specify a custom message.
+
+ -v Print each argument.
+
+
+=head1 EXAMPLE
+
+ printargs.sh a b c
+
+ printargs.sh -m 'Arguments count: ' a b c
+
+ printargs.sh -v a b c
+
+ printargs.sh -m 'Arguments count: ' a b c -v
+
+ printargs.sh -h
+
+=cut
+</pre>
+			</div>
+			<div>
+				<h3>Задание №6: Расскажите, в каком объёме и при каких обстоятельствах вы изучали следующие темы: языки программирования (императивные/декларативные, разные системы типов), структуры (классы, структуры данных, примитивные типы), парадигмы (события, ООП, параллельность/асинхронность, кеширование), алгоритмы (парсинг, сортировка, поиск), паттерны.</h3>
+				Данные темы (пишу обо всех сразу для краткости, так как это относится ко всем из них), я знаю, но не могу сказать, что очень уверенно. Лучше сказать, что я о них осведомлён, за исключением алгоритмов и парадигм, с которыми знаком более плотно. Соприкосался я с этими темами, как в школе и университете на уроках информатики, так и лично, когда это требовалось на работе. О каждой из них у меня есть определённое представление, где-то более глубокое (алгоритмы, парадигмы, структуры), где-то менее (языки программирования, паттерны). Скажем так, своей подруге я могу объяснить своим языком эти темы, чтобы у неё сложилось представле6ние о том, что это и как работает, но вот говорить со теми, кто в этом действительно разбирается, обсуждая различные нюансы или аргументированно объяснить, почему в конкретной реализации лучше тот или иной вариант, я не смогу.
+			</div>
+		</div>
+	</body>
+</html>
